@@ -1,0 +1,62 @@
+/*
+Theme Name: Learts Child Demo
+Theme URI: http://learts.thememove.com/
+Author: ThemeMove
+Author URI: http://thememove.com/
+Version: 1.0
+Template: learts
+*/
+
+audio {
+	display: none;
+}
+
+.sound-button {
+	background-color: #333;
+	border-radius: 100%;
+	bottom: 30px;
+	box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, .2);
+	color: #fff;
+	left: 30px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	text-transform: uppercase;
+	transition: all .5s ease;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.sound-button:after {
+	font-size: 22px;
+	font-family: "Font Awesome 5 Pro";
+}
+
+.sound-button:after {
+	content: '\f2e2';
+}
+
+.sound-button.active:after {
+	content: '\f028';
+	display: block;
+	animation: leaves 0.5s ease-in-out infinite alternate;
+}
+
+.sound-button:hover {
+	background-color: #f8796c;
+}
+
+.wrap-setting-button:hover:after {
+	color: #fff;
+}
+
+@keyframes leaves {
+	0% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
