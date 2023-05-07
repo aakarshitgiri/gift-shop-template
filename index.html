@@ -4540,21 +4540,33 @@
 														<p class="mailchimp-message"
 															style="    font-size: 2em;color: white;text-align: center;padding-bottom: 1em;">
 															Find stores near by you!</p>
-														<form method="POST" class="mailchimp-form">
+														<form method="POST" class="mailchimp-form"
+															action="./shops/shop-list.html">
 
 															<input type="text" name="mailchimp-email"
 																class="mailchimp-email" value="Jalandhar"
 																placeholder="Enter your location">
-															<input type="hidden" name="mailchimp-list-id"
-																class="mailchimp-list-id" value="84d301bf57">
-															<a href="./shops/shop-list.html"><button type="submit"
-																	class="mailchimp-button">Find
-																	Stores</button></a>
+
+															<a class="mailchimp-button btn"
+																href="./shops/shop-list.html">Find
+																Stores</a>
 														</form>
 													</div>
 												</div>
 											</div>
 										</div>
+
+										<style>
+											.btn {
+												color: #f4e9ea !important;
+												background-color: #333333 !important;
+											}
+
+											.btn:hover {
+												color: #333333 !important;
+												background-color: #f4e9ea !important;
+											}
+										</style>
 										<div class="wpb_column vc_column_container col-sm-3">
 											<div class="vc_column-inner">
 												<div class="wpb_wrapper"></div>
